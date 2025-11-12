@@ -1,59 +1,150 @@
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Page</title>
-</head>
-<body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clínica Vitalis | Salud Preventiva</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Encabezado principal con navegación multipágina -->
+    <header>
+      <p id="emergency-banner">Línea de emergencia 24/7: (01) 555-911</p>
+      <h1 class="header-title">Clínica Vitalis</h1>
+      <nav aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="services.html">Servicios</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
 
+    <main>
+      <section class="hero">
+        <p class="section-title">Medicina preventiva</p>
+        <h2>Tu bienestar es nuestra prioridad</h2>
+        <p>
+          Nuestro equipo multidisciplinario combina tecnología avanzada con un
+          trato humano para mantener tu salud en óptimas condiciones.
+          <span class="inline-text" style="font-weight: 600">Este texto usa estilo en línea para resaltar el mensaje.</span>
+        </p>
+        <div class="hero-actions">
+          <a class="button-primary" href="services.html">Agenda tu chequeo</a>
+          <a class="button-secondary" href="contact.html">Conversemos</a>
+        </div>
+      </section>
 
-  <header>
-    <h1>Welcome to Medicine Page</h1>
-  </header>
+      <section>
+        <h2 class="section-title">Programas destacados</h2>
+        <div class="service-grid">
+          <article class="card">
+            <h3>Chequeo ejecutivo</h3>
+            <p>
+              Evaluación integral en un día con especialistas en cardiología,
+              nutrición y medicina interna.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Clínica del sueño</h3>
+            <p>
+              Diagnóstico y tratamiento de trastornos del sueño para mejorar tu
+              energía diaria y rendimiento.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Fisioterapia activa</h3>
+            <p>
+              Planes personalizados que combinan terapia manual y ejercicio
+              terapéutico.
+            </p>
+          </article>
+        </div>
+      </section>
 
-  <nav aria-label="Menu">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About company</a></li>
-      <li><a href="#">Contact us</a></li>
-    </ul>
-  </nav>
+      <section class="benefits" aria-label="Beneficios de la clínica">
+        <div class="benefit">
+          <h3>Equipo experto</h3>
+          <p>
+            Especialistas certificados en medicina preventiva, pediatría y
+            rehabilitación.
+          </p>
+        </div>
+        <div class="benefit">
+          <h3>Tecnología segura</h3>
+          <p>
+            Laboratorios digitalizados y resultados en línea con cifrado de
+            datos.
+          </p>
+        </div>
+        <div class="benefit">
+          <h3>Acompañamiento total</h3>
+          <p>
+            Seguimiento continuo mediante telemedicina y recordatorios
+            personalizados.
+          </p>
+        </div>
+      </section>
 
-  <main>
-    <section>
-      <h2>About This Page</h2>
-      <p>This is a company dedicated to providing high-quality, high-quality medical services.</p>
-    </section>
+      <section class="stats" aria-label="Cifras relevantes">
+        <span class="stat-item">98% pacientes satisfechos</span>
+        <span class="stat-item">15 especialidades médicas</span>
+        <span class="stat-item">4 sedes en Lima</span>
+      </section>
 
-    <article>
-      <h3>Home care</h3>
-      <p>Currently we have 2 doctors who make home visits by appointment; one specializes in family medicine and has a doctorate in pain management, and the other specializes in physiotherapy.</p>
-      <p>Published on <time datetime="2025-11-03">November 3, 2025</time>.</p>
-    </article>
+      <section class="float-wrapper">
+        <aside class="float-card">
+          <h3>Recordatorio saludable</h3>
+          <p>Hidrátate y duerme 7-8 horas cada noche para una mejor inmunidad.</p>
+        </aside>
+        <h2>Educación en salud</h2>
+        <p>
+          Nuestro blog actualizado semanalmente aborda prevención, nutrición y
+          actividad física. Cada artículo incluye recomendaciones prácticas y
+          enlaces a guías oficiales.
+        </p>
+        <p>
+          También contamos con talleres grupales para familias, empresas y
+          centros educativos, adaptados a las necesidades de cada público.
+        </p>
+        <div class="clear-floats"></div>
+      </section>
 
-    <nav aria-label="Services">
-      <ul>
-        <li><a href="#">Densitometry</a></li>
-        <li><a href="#">Breath test</a></li>
-        <li><a href="#">Physiotherapy</a></li>
-      </ul>
-    </nav>
+      <section>
+        <h2>Historias de progreso</h2>
+        <div class="overflow-panel" aria-live="polite">
+          <p>
+            "Tras mi chequeo ejecutivo, pude detectar un problema cardíaco a
+            tiempo y hoy llevo un plan integral de seguimiento." - María, 42
+            años.
+          </p>
+          <p>
+            "La telemedicina me permitió mantener mi tratamiento de fisioterapia
+            incluso en viajes de trabajo." - Luis, 35 años.
+          </p>
+          <p>
+            "Los talleres corporativos nos ayudaron a reducir el ausentismo en
+            un 30% y mejorar el clima laboral." - Ana, gerente de RRHH.
+          </p>
+        </div>
+      </section>
 
-    <aside>
-      <h3>Did You Know?</h3>
-      <p>HTML stands for <em>HyperText Markup Language</em> &copy; 2025.</p>
-    </aside>
-  </main>
+      <section class="highlighted-note" aria-label="Nota de accesibilidad">
+        <!-- Comentario HTML: usamos esta sección para destacar compromisos de accesibilidad -->
+        <h2>Compromiso con la accesibilidad</h2>
+        <p>
+          Todas las instalaciones cuentan con rampas, señalética en braille y
+          asistencia personalizada para garantizar una experiencia inclusiva.
+        </p>
+      </section>
+    </main>
 
-  <footer>
-    <p>Created by <strong>Jose Gabriel Zevallos</strong> for Web Development Essentials.</p>
-    <p>All rights reserved &copy; 2025</p>
-  </footer>
-
-
-</body>
+    <footer>
+      <p>&copy; 2025 Clínica Vitalis. Todos los derechos reservados.</p>
+      <p>
+        Diseñado por Jose Gabriel Zevallos para demostrar buenas prácticas de
+        HTML5 y CSS.
+      </p>
+    </footer>
+  </body>
 </html>
-
-
