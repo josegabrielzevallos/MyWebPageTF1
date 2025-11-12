@@ -1,0 +1,278 @@
+/* =========================================================
+   Hoja de estilos principal para Clínica Vitalis
+   Organización por secciones para evitar conflictos específicos
+   ========================================================= */
+
+/* ---------- Configuración global y tipografía ---------- */
+:root {
+  --primary-color: #0b7285;
+  --secondary-color: #37b24d;
+  --text-dark: #0b1d26;
+  --text-light: #f8f9fa;
+  --card-bg: rgba(255, 255, 255, 0.85);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit; /* Uso de box-sizing dentro del modelo de caja */
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-dark);
+  line-height: 1.6;
+  background: linear-gradient(rgba(11, 114, 133, 0.75), rgba(55, 178, 77, 0.75)),
+    url('https://images.unsplash.com/photo-1580281657521-4dbc01cf2c9a?auto=format&fit=crop&w=1600&q=80')
+      center/cover fixed;
+  min-height: 100vh;
+}
+
+a:link {
+  color: var(--text-light);
+  text-decoration: none;
+}
+
+a:visited {
+  color: #d8f3dc;
+}
+
+a:hover {
+  color: #ffe066;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #ff922b;
+}
+
+/* ---------- Estructura principal ---------- */
+header {
+  background: rgba(11, 29, 38, 0.8);
+  color: var(--text-light);
+  padding: 1rem 2rem;
+  border-bottom: 4px solid var(--secondary-color);
+}
+
+.header-title {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+nav {
+  margin-top: 0.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex; /* Contenedor flex */
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block; /* Ejemplo de inline-block */
+}
+
+nav a {
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+main {
+  padding: 2rem;
+  background-color: rgba(248, 249, 250, 0.88);
+}
+
+.hero {
+  display: block; /* Ejemplo explícito de bloque */
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(11, 114, 133, 0.3);
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 25px rgba(11, 29, 38, 0.15);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.button-primary,
+.button-secondary {
+  display: inline-flex; /* Elementos flex como botones */
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  border: 2px solid transparent;
+  font-weight: 700;
+  transition: transform 0.2s ease-in-out;
+}
+
+.button-primary {
+  background-color: var(--secondary-color);
+  color: var(--text-light);
+}
+
+.button-secondary {
+  background-color: transparent;
+  color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.button-primary:hover,
+.button-secondary:hover {
+  transform: translateY(-3px);
+}
+
+/* ---------- Secciones y tarjetas ---------- */
+.section-title {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.9rem;
+  color: var(--primary-color);
+}
+
+.service-grid {
+  display: grid; /* Ejemplo de grid */
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(11, 29, 38, 0.1);
+  margin: 0; /* Modelo de caja completo */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.benefits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.benefit {
+  flex: 1 1 220px; /* Propiedades de ítems flex */
+  background: var(--card-bg);
+  padding: 1.25rem;
+  border-left: 4px solid var(--primary-color);
+  border-radius: 0.75rem;
+}
+
+.stats {
+  margin: 2rem 0;
+  background: rgba(11, 29, 38, 0.8);
+  color: var(--text-light);
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+.stat-item {
+  display: inline-block; /* Ejemplo de inline-block */
+  margin-right: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.inline-text {
+  display: inline; /* Ejemplo de inline */
+  background: #e7f5ff;
+  padding: 0 0.25rem;
+}
+
+/* ---------- Flotantes y limpieza ---------- */
+.float-wrapper {
+  background: var(--card-bg);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.float-card {
+  float: right; /* Ejemplo de uso de float */
+  width: 240px;
+  margin: 0 0 1rem 1rem;
+  padding: 1rem;
+  background: rgba(11, 114, 133, 0.15);
+  border-left: 4px solid var(--secondary-color);
+  border-radius: 0.5rem;
+}
+
+.clear-floats {
+  clear: both; /* Uso de la propiedad clear */
+}
+
+/* ---------- Desbordamiento controlado ---------- */
+.overflow-panel {
+  max-height: 120px;
+  overflow-y: auto; /* Ejemplo de overflow */
+  padding: 1rem;
+  border: 1px dashed rgba(11, 114, 133, 0.4);
+  background: rgba(255, 255, 255, 0.65);
+}
+
+/* ---------- Pie de página ---------- */
+footer {
+  background: rgba(11, 29, 38, 0.85);
+  color: var(--text-light);
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+footer p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+}
+
+/* ---------- Utilidades ---------- */
+#emergency-banner {
+  background: #ff6b6b;
+  color: var(--text-light);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  display: block;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.highlighted-note {
+  border: 2px dashed var(--secondary-color);
+  padding: 1rem;
+  border-radius: 0.75rem;
+  background: rgba(55, 178, 77, 0.15);
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .float-card {
+    float: none;
+    width: 100%;
+  }
+
+  .stat-item {
+    display: block;
+    margin: 0.5rem 0;
+  }
+}
