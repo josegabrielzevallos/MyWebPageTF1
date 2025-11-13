@@ -1,0 +1,336 @@
+/* =========================================================
+   Main stylesheet for Vitalis Clinic
+   Organized in sections to avoid specificity conflicts
+   ========================================================= */
+
+/* ---------- Global configuration and typography ---------- */
+:root {
+  --primary-color: #0b7285;
+  --secondary-color: #37b24d;
+  --text-dark: #0b1d26;
+  --text-light: #f8f9fa;
+  --card-bg: rgba(255, 255, 255, 0.85);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit; /* Using box-sizing within the box model */
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-dark);
+  line-height: 1.6;
+  background: linear-gradient(rgba(11, 114, 133, 0.75), rgba(55, 178, 77, 0.75)),
+    url('https://images.unsplash.com/photo-1580281657521-4dbc01cf2c9a?auto=format&fit=crop&w=1600&q=80')
+      center/cover fixed;
+  min-height: 100vh;
+}
+
+a:link {
+  color: var(--text-light);
+  text-decoration: none;
+}
+
+a:visited {
+  color: #d8f3dc;
+}
+
+a:hover {
+  color: #ffe066;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #ff922b;
+}
+
+/* ---------- Main structure ---------- */
+.site-header {
+  background: rgba(11, 29, 38, 0.8);
+  color: var(--text-light);
+  padding: 1rem 2rem 1.5rem;
+  border-bottom: 4px solid var(--secondary-color);
+}
+
+.header-grid {
+  display: grid;
+  grid-template-columns: minmax(160px, 220px) 1fr auto;
+  align-items: start;
+  gap: 1.5rem;
+}
+
+.header-title {
+  margin: 0;
+  font-size: 2.5rem;
+  align-self: center;
+}
+
+.site-header nav {
+  align-self: stretch;
+  background: rgba(248, 249, 250, 0.1);
+  padding: 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(248, 249, 250, 0.25);
+}
+
+.site-header nav ul {
+  list-style: none;
+  display: flex; /* Flex container for the vertical menu */
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 0;
+  margin: 0;
+}
+
+.site-header nav li {
+  display: inline-block; /* Inline-block example inside the side menu */
+}
+
+nav a {
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  display: block;
+}
+
+.site-logo {
+  justify-self: end;
+  align-self: start;
+  display: inline-flex;
+  padding: 0.35rem;
+  border-radius: 50%;
+  background: rgba(248, 249, 250, 0.15);
+  border: 2px solid rgba(248, 249, 250, 0.4);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.site-logo img {
+  width: 72px;
+  height: 72px;
+  display: block;
+}
+
+main {
+  padding: 2rem;
+  background-color: rgba(248, 249, 250, 0.88);
+}
+
+.hero {
+  display: block; /* Explicit block example */
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(11, 114, 133, 0.3);
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 25px rgba(11, 29, 38, 0.15);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.button-primary,
+.button-secondary {
+  display: inline-flex; /* Flex items used as buttons */
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  border: 2px solid transparent;
+  font-weight: 700;
+  transition: transform 0.2s ease-in-out;
+}
+
+.button-primary {
+  background-color: var(--secondary-color);
+  color: var(--text-light);
+}
+
+.button-secondary {
+  background-color: transparent;
+  color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.button-primary:hover,
+.button-secondary:hover {
+  transform: translateY(-3px);
+}
+
+/* ---------- Sections and cards ---------- */
+.section-title {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.9rem;
+  color: var(--primary-color);
+}
+
+.service-grid {
+  display: grid; /* Grid example */
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(11, 29, 38, 0.1);
+  margin: 0; /* Full box model example */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.benefits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.benefit {
+  flex: 1 1 220px; /* Flex item properties */
+  background: var(--card-bg);
+  padding: 1.25rem;
+  border-left: 4px solid var(--primary-color);
+  border-radius: 0.75rem;
+}
+
+.stats {
+  margin: 2rem 0;
+  background: rgba(11, 29, 38, 0.8);
+  color: var(--text-light);
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+.stat-item {
+  display: inline-block; /* Inline-block example */
+  margin-right: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.inline-text {
+  display: inline; /* Inline example */
+  background: #e7f5ff;
+  padding: 0 0.25rem;
+}
+
+/* ---------- Floats and clearing ---------- */
+.float-wrapper {
+  background: var(--card-bg);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.float-card {
+  float: right; /* Float example */
+  width: 240px;
+  margin: 0 0 1rem 1rem;
+  padding: 1rem;
+  background: rgba(11, 114, 133, 0.15);
+  border-left: 4px solid var(--secondary-color);
+  border-radius: 0.5rem;
+}
+
+.clear-floats {
+  clear: both; /* Using the clear property */
+}
+
+/* ---------- Controlled overflow ---------- */
+.overflow-panel {
+  max-height: 120px;
+  overflow-y: auto; /* Overflow example */
+  padding: 1rem;
+  border: 1px dashed rgba(11, 114, 133, 0.4);
+  background: rgba(255, 255, 255, 0.65);
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background: rgba(11, 29, 38, 0.85);
+  color: var(--text-light);
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+footer p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+}
+
+/* ---------- Utilities ---------- */
+#emergency-banner {
+  background: #ff6b6b;
+  color: var(--text-light);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  display: block;
+  margin: 0 0 1rem;
+  text-align: center;
+  font-weight: 600;
+  grid-column: 1 / -1;
+}
+
+.highlighted-note {
+  border: 2px dashed var(--secondary-color);
+  padding: 1rem;
+  border-radius: 0.75rem;
+  background: rgba(55, 178, 77, 0.15);
+}
+
+@media (max-width: 900px) {
+  .header-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .header-title {
+    text-align: center;
+  }
+
+  .site-header nav {
+    justify-self: stretch;
+  }
+
+  .site-header nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .site-header nav li {
+    display: inline-block;
+  }
+
+  .site-logo {
+    justify-self: center;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .float-card {
+    float: none;
+    width: 100%;
+  }
+
+  .stat-item {
+    display: block;
+    margin: 0.5rem 0;
+  }
+}

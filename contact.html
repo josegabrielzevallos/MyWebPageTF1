@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Vitalis Clinic</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Internal styles specific to the contact page */
+      form {
+        max-width: 640px;
+        margin: 0 auto;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 1.5rem;
+        border-radius: 1rem;
+        border: 2px solid rgba(11, 114, 133, 0.25);
+      }
+
+      label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 0.35rem;
+      }
+
+      input,
+      textarea,
+      select {
+        width: 100%;
+        padding: 0.75rem;
+        margin-bottom: 1rem;
+        border-radius: 0.5rem;
+        border: 1px solid rgba(11, 114, 133, 0.3);
+        font-family: inherit;
+      }
+
+      .contact-details {
+        background: rgba(255, 255, 255, 0.85);
+        border-radius: 1rem;
+        padding: 1.5rem;
+        margin: 2rem auto;
+        max-width: 800px;
+      }
+
+      .map-placeholder {
+        height: 240px;
+        border-radius: 1rem;
+        background: repeating-linear-gradient(
+          45deg,
+          rgba(11, 114, 133, 0.15),
+          rgba(11, 114, 133, 0.15) 20px,
+          rgba(55, 178, 77, 0.15) 20px,
+          rgba(55, 178, 77, 0.15) 40px
+        );
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        color: var(--primary-color);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-grid">
+        <p id="emergency-banner">24/7 Emergency Line: (01) 555-911</p>
+        <nav aria-label="Primary navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <h1 class="header-title">Vitalis Clinic</h1>
+        <a class="site-logo" href="index.html" aria-label="Vitalis Clinic home">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Red_Cross_Icon.svg/120px-Red_Cross_Icon.svg.png"
+            alt="Vitalis Clinic logo featuring a medical cross"
+          />
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <p class="section-title">Let's connect</p>
+        <h2>We are ready to support you</h2>
+        <p>
+          Share your details and a health advisor will reach out in under 24
+          hours.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="section-title">Contact form</h2>
+        <form action="#" method="post">
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="service">Service of interest</label>
+          <select id="service" name="service">
+            <option value="checkup">Preventive checkup</option>
+            <option value="telemedicine">Telemedicine</option>
+            <option value="physiotherapy">Physiotherapy</option>
+            <option value="nutrition">Nutrition</option>
+          </select>
+
+          <label for="message">Tell us more</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+
+          <button class="button-primary" type="submit">Send message</button>
+        </form>
+      </section>
+
+      <section class="contact-details">
+        <h2>Visit us</h2>
+        <p>
+          123 Wellness Ave., Miraflores. In-person visits Monday to Saturday from
+          8:00 to 20:00.
+        </p>
+        <div class="map-placeholder">Map under construction</div>
+        <p>
+          <!-- HTML comment: sharing lessons learned from the project -->
+          Biggest challenge solved: blending floats with flexbox and grid without
+          clashes. We tackled it by grouping CSS rules and adding descriptive
+          comments.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Vitalis Clinic. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

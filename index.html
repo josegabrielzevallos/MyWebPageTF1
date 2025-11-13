@@ -1,59 +1,155 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Page</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vitalis Clinic | Preventive Health</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Main header with multi-page navigation -->
+    <header class="site-header">
+      <div class="header-grid">
+        <p id="emergency-banner">24/7 Emergency Line: (01) 555-911</p>
+        <nav aria-label="Primary navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <h1 class="header-title">Vitalis Clinic</h1>
+        <a class="site-logo" href="index.html" aria-label="Vitalis Clinic home">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Red_Cross_Icon.svg/120px-Red_Cross_Icon.svg.png"
+            alt="Vitalis Clinic logo featuring a medical cross"
+          />
+        </a>
+      </div>
+    </header>
 
+    <main>
+      <section class="hero">
+        <p class="section-title">Preventive medicine</p>
+        <h2>Your well-being is our priority</h2>
+        <p>
+          Our multidisciplinary team pairs advanced technology with a human touch
+          to keep your health in top shape.
+          <span class="inline-text" style="font-weight: 600">This inline-styled text highlights the message.</span>
+        </p>
+        <div class="hero-actions">
+          <a class="button-primary" href="services.html">Book your checkup</a>
+          <a class="button-secondary" href="contact.html">Let's talk</a>
+        </div>
+      </section>
 
-  <header>
-    <h1>Welcome to Medicine Page</h1>
-  </header>
+      <section>
+        <h2 class="section-title">Featured programs</h2>
+        <div class="service-grid">
+          <article class="card">
+            <h3>Executive checkup</h3>
+            <p>
+              Comprehensive day-long assessments with cardiology, nutrition, and
+              internal medicine specialists.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Sleep clinic</h3>
+            <p>
+              Diagnosis and treatment for sleep disorders to boost your daily
+              energy and performance.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Active physiotherapy</h3>
+            <p>
+              Personalized plans that combine manual therapy with therapeutic
+              exercise.
+            </p>
+          </article>
+        </div>
+      </section>
 
-  <nav aria-label="Menu">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About company</a></li>
-      <li><a href="#">Contact us</a></li>
-    </ul>
-  </nav>
+      <section class="benefits" aria-label="Clinic benefits">
+        <div class="benefit">
+          <h3>Expert team</h3>
+          <p>
+            Board-certified specialists in preventive medicine, pediatrics, and
+            rehabilitation.
+          </p>
+        </div>
+        <div class="benefit">
+          <h3>Secure technology</h3>
+          <p>
+            Digitized labs and online results backed by data encryption.
+          </p>
+        </div>
+        <div class="benefit">
+          <h3>Ongoing support</h3>
+          <p>
+            Continuous follow-ups through telemedicine and personalized
+            reminders.
+          </p>
+        </div>
+      </section>
 
-  <main>
-    <section>
-      <h2>About This Page</h2>
-      <p>This is a company dedicated to providing high-quality, high-quality medical services.</p>
-    </section>
+      <section class="stats" aria-label="Key statistics">
+        <span class="stat-item">98% patient satisfaction</span>
+        <span class="stat-item">15 medical specialties</span>
+        <span class="stat-item">4 locations across Lima</span>
+      </section>
 
-    <article>
-      <h3>Home care</h3>
-      <p>Currently we have 2 doctors who make home visits by appointment; one specializes in family medicine and has a doctorate in pain management, and the other specializes in physiotherapy.</p>
-      <p>Published on <time datetime="2025-11-03">November 3, 2025</time>.</p>
-    </article>
+      <section class="float-wrapper">
+        <aside class="float-card">
+          <h3>Healthy reminder</h3>
+          <p>Stay hydrated and sleep 7–8 hours each night for stronger immunity.</p>
+        </aside>
+        <h2>Health education</h2>
+        <p>
+          Our weekly blog covers prevention, nutrition, and physical activity.
+          Every article includes practical tips and links to official guides.
+        </p>
+        <p>
+          We also host group workshops for families, workplaces, and schools,
+          tailored to each audience’s needs.
+        </p>
+        <div class="clear-floats"></div>
+      </section>
 
-    <nav aria-label="Services">
-      <ul>
-        <li><a href="#">Densitometry</a></li>
-        <li><a href="#">Breath test</a></li>
-        <li><a href="#">Physiotherapy</a></li>
-      </ul>
-    </nav>
+      <section>
+        <h2>Progress stories</h2>
+        <div class="overflow-panel" aria-live="polite">
+          <p>
+            “After my executive checkup I caught a heart issue in time, and now I
+            follow a comprehensive care plan.” — Maria, 42.
+          </p>
+          <p>
+            “Telemedicine let me keep up with physiotherapy even while traveling
+            for work.” — Luis, 35.
+          </p>
+          <p>
+            “The corporate workshops helped us cut absenteeism by 30% and boost
+            morale.” — Ana, HR manager.
+          </p>
+        </div>
+      </section>
 
-    <aside>
-      <h3>Did You Know?</h3>
-      <p>HTML stands for <em>HyperText Markup Language</em> &copy; 2025.</p>
-    </aside>
-  </main>
+      <section class="highlighted-note" aria-label="Accessibility note">
+        <!-- HTML comment: this section highlights our accessibility commitments -->
+        <h2>Accessibility commitment</h2>
+        <p>
+          Every facility includes ramps, braille signage, and tailored assistance
+          to ensure an inclusive experience.
+        </p>
+      </section>
+    </main>
 
-  <footer>
-    <p>Created by <strong>Jose Gabriel Zevallos</strong> for Web Development Essentials.</p>
-    <p>All rights reserved &copy; 2025</p>
-  </footer>
-
-
-</body>
+    <footer>
+      <p>&copy; 2025 Vitalis Clinic. All rights reserved.</p>
+      <p>
+        Designed by Jose Gabriel Zevallos to showcase sound HTML5 and CSS
+        practices.
+      </p>
+    </footer>
+  </body>
 </html>
-
-
