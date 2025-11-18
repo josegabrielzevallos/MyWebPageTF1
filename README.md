@@ -1,20 +1,20 @@
-# Clínica Vitalis
+# Medic Family
 
-Sitio web sencillo desarrollado únicamente con **HTML5** y **CSS** para presentar una clínica de salud preventiva. El proyecto demuestra distintos conceptos fundamentales solicitados: estructura semántica, navegación multipágina, estilos en línea/internos/externos, selectores CSS, modelo de caja, pseudo-clases, flexbox, grid, floats, entre otros.
+A simple website built exclusively with **HTML5** and **CSS** to showcase a preventive health clinic. The project demonstrates various requested fundamental concepts: semantic structure, multi-page navigation, inline/internal/external styles, CSS selectors, box model, pseudo-classes, flexbox, grid, floats, and more.
 
-## Estructura del proyecto
-- `index.html`: página de inicio con hero principal, servicios destacados y secciones explicativas.
-- `services.html`: catálogo de servicios médicos y demostraciones de grid/flex.
-- `contact.html`: página de contacto con estilos internos, formulario simple y ejemplo de desbordamiento controlado.
-- `style.css`: hoja de estilos principal enlazada desde todas las páginas.
+## Project Structure
+- `index.html`: home page with main hero, featured services, and explanatory sections.
+- `services.html`: medical services catalog with grid/flex demonstrations.
+- `contact.html`: contact page with internal styles, simple form, and controlled overflow example.
+- `style.css`: main stylesheet linked from all pages.
 
-## Cómo navegar
-1. Abre `index.html` en tu navegador favorito.
-2. Utiliza el menú de navegación para desplazarte entre Inicio, Servicios y Contacto.
-3. Prueba los enlaces y efectos de hover para observar las pseudo-clases configuradas.
+## How to Navigate
+1. Open `index.html` in your favorite browser.
+2. Use the navigation menu to move between Home, Services, and Contact.
+3. Test the links and hover effects to observe the configured pseudo-classes.
 
-## Colaboradores
+## Contributors
 - Jose Gabriel Zevallos
 
-## Mayor desafío
-El mayor reto fue equilibrar múltiples requerimientos de estilos (floats, flexbox y grid) en un mismo diseño sin sacrificar la claridad visual. Se superó organizando las reglas CSS por secciones y utilizando comentarios descriptivos para evitar conflictos de especificidad.
+## Main Challenge
+The biggest challenge was balancing multiple style requirements (floats, flexbox, and grid) in a single design without sacrificing visual clarity. It was solved by organizing CSS rules by sections and using descriptive comments to avoid specificity conflicts.

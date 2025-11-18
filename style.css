@@ -26,9 +26,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: var(--text-dark);
   line-height: 1.6;
-  background: linear-gradient(rgba(11, 114, 133, 0.75), rgba(55, 178, 77, 0.75)),
-    url('https://images.unsplash.com/photo-1580281657521-4dbc01cf2c9a?auto=format&fit=crop&w=1600&q=80')
-      center/cover fixed;
+  background: linear-gradient(rgba(11, 114, 133, 0.75), rgba(55, 178, 77, 0.75)),url(./images/img-background.jpg);
   min-height: 100vh;
 }
 
@@ -52,10 +50,9 @@ a:active {
 
 /* ---------- Estructura principal ---------- */
 header {
-  --header-height: 9rem; /* Ajusta este valor si cambias tamaños dentro del header */
   background: rgba(11, 29, 38, 0.8);
   color: var(--text-light);
-  padding: 1rem 2rem;
+  padding: 1px;
   border-bottom: 4px solid var(--secondary-color);
   position: sticky;
   top: 0;
@@ -76,14 +73,22 @@ header {
 
 nav {
   margin-top: 0.5rem;
-}
+   margin: 0 auto;
+  padding: 1px 32px;
+  min-height: 80px;
 
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+}
+.spacer{ flex: 1 1 auto; }
 nav ul {
   list-style: none;
   display: flex; /* Contenedor flex */
   gap: 1.5rem;
-  padding: 0;
-  margin: 0;
+  align-items: center;
+  gap: 20px;
+  padding-right: 23px;
 }
 
 nav li {
@@ -95,6 +100,44 @@ nav a {
   letter-spacing: 0.05em;
 }
 
+/* ===== Submenú Services ===== */
+#services-li{ position: relative; }
+#services-menu{
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  min-width: 180px;
+  padding: 8px 10px;
+  background: #323f42;
+  border: 1px solid #3b4a50;
+  border-radius: 10px;
+  box-shadow: 0 10px 24px rgba(0,0,0,.25);
+
+  display: grid;
+  gap: 6px;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-6px);
+  transition: opacity .2s ease, transform .2s ease, visibility .2s;
+  z-index: 1001;
+}
+#services-li:hover #services-menu{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+#services-menu li{ margin: 0; }
+#services-menu a{
+  white-space: nowrap;
+  color: #e9f0ff;
+  padding: 6px 8px;
+  border-radius: 8px;
+}
+#services-menu a:hover{ background: #405159; }
+/* ---------- Contenido principal ---------- */
+
+
 main {
   padding: 2rem;
   padding-top: calc(var(--header-height) + 2rem); /* Empuja el contenido debajo del header fijo */
@@ -102,15 +145,18 @@ main {
 }
 
 .hero {
-  display: block; /* Ejemplo explícito de bloque */
+  display: flex; /* Ejemplo explícito de bloque */
   background: var(--card-bg);
   padding: 2rem;
   border-radius: 1rem;
   border: 1px solid rgba(11, 114, 133, 0.3);
   margin-bottom: 2rem;
   box-shadow: 0 10px 25px rgba(11, 29, 38, 0.15);
+  background: linear-gradient(to right, white,#275361)
 }
-
+.hero-text {
+    max-width: 60%;
+}
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
@@ -144,6 +190,12 @@ main {
 .button-primary:hover,
 .button-secondary:hover {
   transform: translateY(-3px);
+}
+
+
+.hero-img img {
+    width: 480px;
+    border-radius: 12px;
 }
 
 /* ---------- Secciones y tarjetas ---------- */
@@ -257,7 +309,7 @@ footer p {
 #emergency-banner {
   background: #ff6b6b;
   color: var(--text-light);
-  padding: 0.5rem 1rem;
+  padding: 1px;
   border-radius: 0.5rem;
   display: block;
   margin-bottom: 1rem;

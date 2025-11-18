@@ -3,148 +3,162 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clínica Vitalis | Salud Preventiva</title>
+    <title>Vitalis Clinic | Preventive Health</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Encabezado principal con navegación multipágina -->
+    <!-- Main header with multi-page navigation -->
     <header>
-      <p id="emergency-banner">Línea de emergencia 24/7: (01) 555-911</p>
-      <h1 class="header-title">Clínica Vitalis</h1>
-      <nav aria-label="Navegación principal">
+      <p id="emergency-banner">2025 - Emergency Line: (01) 555-911</p>
+    
+
+      <nav aria-label="Main Navigation">
+        <h1 class="header-title">Medic Family</h1>
+
+         <span class="spacer" aria-hidden="true"></span>
         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="./pages/services.html">Servicios</a></li>
-          <li><a href="./pages/contact.html">Contacto</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li id="services-li">
+            <a aria-haspopup="true" aria-expanded="false">Services </a>
+            <ul id="services-menu" aria-label="submenu">
+              <li><a href="./pages/services.html" >Doc. Service</a></li>
+              <li><a href="#">Examinations</a></li>
+              <li><a href="#">Medicines</a></li>
+            </ul>
+          </li>
+          <li><a href="./pages/contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
       <section class="hero">
-        <p class="section-title">Medicina preventiva</p>
-        <h2>Tu bienestar es nuestra prioridad</h2>
-        <p>
-          Nuestro equipo multidisciplinario combina tecnología avanzada con un
-          trato humano para mantener tu salud en óptimas condiciones.
-          <span class="inline-text" style="font-weight: 600">Este texto usa estilo en línea para resaltar el mensaje.</span>
-        </p>
-        <div class="hero-actions">
-          <a class="button-primary" href="services.html">Agenda tu chequeo</a>
-          <a class="button-secondary" href="contact.html">Conversemos</a>
+        <div class="hero-text">
+          <p class="section-title">Preventive Medicine</p>
+          <h2>Your wellness is our priority</h2>
+          <p>
+            Our multidisciplinary team combines advanced technology with human
+            care to keep your health in optimal condition.
+
+            <span class="inline-text" style="font-weight: 600">This text uses inline styling to highlight the message.</span>
+          </p>
+          <div clas s="hero-actions">
+            <a class="button-primary" href="services.html">Schedule Your Checkup</a>
+            <a class="button-secondary" href="contact.html">Let's Talk</a>
+          </div>
         </div>
+        <div class="hero-img">
+            <img src="./images/img-home.jpg" alt="Cake">
+        </div>
+
       </section>
 
       <section>
-        <h2 class="section-title">Programas destacados</h2>
+        <h2 class="section-title">Featured Programs</h2>
         <div class="service-grid">
           <article class="card">
-            <h3>Chequeo ejecutivo</h3>
+            <h3>Executive Checkup</h3>
             <p>
-              Evaluación integral en un día con especialistas en cardiología,
-              nutrición y medicina interna.
+              Comprehensive evaluation in one day with specialists in cardiology,
+              nutrition, and internal medicine.
             </p>
           </article>
           <article class="card">
-            <h3>Clínica del sueño</h3>
+            <h3>Sleep Clinic</h3>
             <p>
-              Diagnóstico y tratamiento de trastornos del sueño para mejorar tu
-              energía diaria y rendimiento.
+              Diagnosis and treatment of sleep disorders to improve your
+              daily energy and performance.
             </p>
           </article>
           <article class="card">
-            <h3>Fisioterapia activa</h3>
+            <h3>Active Physiotherapy</h3>
             <p>
-              Planes personalizados que combinan terapia manual y ejercicio
-              terapéutico.
+              Personalized plans that combine manual therapy and therapeutic
+              exercise.
             </p>
           </article>
         </div>
       </section>
 
-      <section class="benefits" aria-label="Beneficios de la clínica">
+      <section class="benefits" aria-label="Clinic Benefits">
         <div class="benefit">
-          <h3>Equipo experto</h3>
+          <h3>Expert Team</h3>
           <p>
-            Especialistas certificados en medicina preventiva, pediatría y
-            rehabilitación.
+            Certified specialists in preventive medicine, pediatrics, and
+            rehabilitation.
           </p>
         </div>
         <div class="benefit">
-          <h3>Tecnología segura</h3>
+          <h3>Secure Technology</h3>
           <p>
-            Laboratorios digitalizados y resultados en línea con cifrado de
-            datos.
+            Digitalized labs and online results with data encryption.
           </p>
         </div>
         <div class="benefit">
-          <h3>Acompañamiento total</h3>
+          <h3>Complete Support</h3>
           <p>
-            Seguimiento continuo mediante telemedicina y recordatorios
-            personalizados.
+            Continuous monitoring through telemedicine and personalized
+            reminders.
           </p>
         </div>
       </section>
 
-      <section class="stats" aria-label="Cifras relevantes">
-        <span class="stat-item">98% pacientes satisfechos</span>
-        <span class="stat-item">15 especialidades médicas</span>
-        <span class="stat-item">4 sedes en Lima</span>
+      <section class="stats" aria-label="Relevant Figures">
+        <span class="stat-item">98% satisfied patients</span>
+        <span class="stat-item">15 medical specialties</span>
+        <span class="stat-item">4 locations in Lima</span>
       </section>
 
       <section class="float-wrapper">
         <aside class="float-card">
-          <h3>Recordatorio saludable</h3>
-          <p>Hidrátate y duerme 7-8 horas cada noche para una mejor inmunidad.</p>
+          <h3>Healthy Reminder</h3>
+          <p>Stay hydrated and sleep 7-8 hours each night for better immunity.</p>
         </aside>
-        <h2>Educación en salud</h2>
+        <h2>Health Education</h2>
         <p>
-          Nuestro blog actualizado semanalmente aborda prevención, nutrición y
-          actividad física. Cada artículo incluye recomendaciones prácticas y
-          enlaces a guías oficiales.
+          Our weekly-updated blog covers prevention, nutrition, and physical
+          activity. Each article includes practical recommendations and
+          links to official guides.
         </p>
         <p>
-          También contamos con talleres grupales para familias, empresas y
-          centros educativos, adaptados a las necesidades de cada público.
+          We also offer group workshops for families, companies, and
+          educational centers, adapted to the needs of each audience.
         </p>
         <div class="clear-floats"></div>
       </section>
 
       <section>
-        <h2>Historias de progreso</h2>
+        <h2>Progress Stories</h2>
         <div class="overflow-panel" aria-live="polite">
           <p>
-            "Tras mi chequeo ejecutivo, pude detectar un problema cardíaco a
-            tiempo y hoy llevo un plan integral de seguimiento." - María, 42
-            años.
+            "Through my executive checkup, I was able to detect a heart problem
+            in time and today I have a comprehensive follow-up plan." - Maria, 42
+            years old.
           </p>
           <p>
-            "La telemedicina me permitió mantener mi tratamiento de fisioterapia
-            incluso en viajes de trabajo." - Luis, 35 años.
+            "Telemedicine allowed me to maintain my physiotherapy treatment
+            even while traveling for work." - Luis, 35 years old.
           </p>
           <p>
-            "Los talleres corporativos nos ayudaron a reducir el ausentismo en
-            un 30% y mejorar el clima laboral." - Ana, gerente de RRHH.
+            "The corporate workshops helped us reduce absenteeism by
+            30% and improve workplace culture." - Ana, HR Manager.
           </p>
         </div>
       </section>
 
-      <section class="highlighted-note" aria-label="Nota de accesibilidad">
-        <!-- Comentario HTML: usamos esta sección para destacar compromisos de accesibilidad -->
-        <h2>Compromiso con la accesibilidad</h2>
+      <section class="highlighted-note" aria-label="Accessibility Note">
+        <!-- HTML Comment: we use this section to highlight accessibility commitments -->
+        <h2>Commitment to Accessibility</h2>
         <p>
-          Todas las instalaciones cuentan con rampas, señalética en braille y
-          asistencia personalizada para garantizar una experiencia inclusiva.
+          All facilities feature ramps, braille signage, and personalized
+          assistance to ensure an inclusive experience.
         </p>
       </section>
     </main>
 
     <footer>
-      <p>&copy; 2025 Clínica Vitalis. Todos los derechos reservados.</p>
-      <p>
-        Diseñado por Jose Gabriel Zevallos para demostrar buenas prácticas de
-        HTML5 y CSS.
-      </p>
+      <p>&copy; 2025 Medic Family. All rights reserved.</p>
+    
     </footer>
   </body>
 </html>

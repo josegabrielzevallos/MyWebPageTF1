@@ -3,107 +3,117 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Servicios | Clínica Vitalis</title>
+    <title>Services | Vitalis Clinic</title>
     <link rel="stylesheet" href="../style.css" />
   </head>
   <body>
     <header>
-      <p id="emergency-banner">Línea de emergencia 24/7: (01) 555-911</p>
-      <h1 class="header-title">Clínica Vitalis</h1>
-      <nav aria-label="Navegación principal">
+      <p id="emergency-banner">2025 - Emergency Line: (01) 555-911</p>
+      
+      <nav aria-label="Main Navigation">
+        <h1 class="header-title">Medic Family</h1>
+
+         <span class="spacer" aria-hidden="true"></span>
         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="services.html">Servicios</a></li>
-          <li><a href="contact.html">Contacto</a></li>
+          <li><a href="../index.html">Home</a></li>
+          <li id="services-li">
+            <a aria-haspopup="true" aria-expanded="false">Services </a>
+            <ul id="services-menu" aria-label="submenu">
+              <li><a href="../pages/services.html" >Doc. Service</a></li>
+              <li><a href="#">Examinations</a></li>
+              <li><a href="#">Medicines</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
       <section class="hero">
-        <p class="section-title">Catálogo médico</p>
-        <h2>Servicios diseñados para cada etapa de tu vida</h2>
+        <p class="section-title">Medical Catalog</p>
+        <h2>Services designed for every stage of your life</h2>
         <p>
-          Desde chequeos preventivos hasta terapias de rehabilitación avanzada,
-          contamos con unidades especializadas para cuidar de ti y tu familia.
+          From preventive checkups to advanced rehabilitation therapies,
+          we have specialized units to care for you and your family.
         </p>
       </section>
 
       <section>
-        <h2 class="section-title">Especialidades</h2>
+        <h2 class="section-title">Specialties</h2>
         <div class="service-grid">
           <article class="card">
-            <h3>Cardiología preventiva</h3>
+            <h3>Preventive Cardiology</h3>
             <p>
-              Evaluaciones de riesgo, pruebas de esfuerzo y planes personalizados
-              para proteger tu corazón.
+              Risk assessments, stress tests, and personalized plans
+              to protect your heart.
             </p>
           </article>
           <article class="card">
-            <h3>Medicina familiar</h3>
+            <h3>Family Medicine</h3>
             <p>
-              Atención integral coordinando especialistas para garantizar un
-              tratamiento coherente.
+              Comprehensive care coordinating specialists to ensure
+              consistent treatment.
             </p>
           </article>
           <article class="card">
-            <h3>Telemedicina</h3>
+            <h3>Telemedicine</h3>
             <p>
-              Consultas virtuales seguras con tu historial disponible en tiempo
-              real.
+              Secure virtual consultations with your history available in real
+              time.
             </p>
           </article>
           <article class="card">
-            <h3>Nutrición funcional</h3>
+            <h3>Functional Nutrition</h3>
             <p>
-              Planes alimenticios y acompañamiento que potencian tus objetivos
-              de salud.
+              Meal plans and support that enhance your health
+              goals.
             </p>
           </article>
         </div>
       </section>
 
-      <section class="benefits" aria-label="Protocolos de atención">
+      <section class="benefits" aria-label="Care Protocols">
         <div class="benefit">
-          <h3>Protocolos ágiles</h3>
-          <p>Triaje digital y agendamiento en línea con confirmación inmediata.</p>
+          <h3>Agile Protocols</h3>
+          <p>Digital triage and online scheduling with immediate confirmation.</p>
         </div>
         <div class="benefit">
-          <h3>Seguimiento continuo</h3>
+          <h3>Continuous Monitoring</h3>
           <p>
-            Aplicación móvil con recordatorios de medicación y hábitos saludables.
+            Mobile app with medication reminders and healthy habit tracking.
           </p>
         </div>
         <div class="benefit">
-          <h3>Atención humanizada</h3>
+          <h3>Humanized Care</h3>
           <p>
-            Acompañamiento psicológico y redes de apoyo para pacientes y familias.
+            Psychological support and support networks for patients and families.
           </p>
         </div>
       </section>
 
       <section class="float-wrapper">
         <aside class="float-card">
-          <h3>Tip Vitalis</h3>
-          <p>Programa chequeos anuales para detectar factores de riesgo ocultos.</p>
+          <h3>Vitalis Tip</h3>
+          <p>Schedule annual checkups to detect hidden risk factors.</p>
         </aside>
-        <h2>Cómo trabajamos</h2>
+        <h2>How We Work</h2>
         <p>
-          <!-- Comentario HTML: explicamos el flujo de atención al paciente -->
-          Iniciamos con una evaluación digital donde recopilamos tus antecedentes
-          médicos y hábitos. Con esa información, un médico líder define tu ruta
-          de atención ideal.
+          <!-- HTML Comment: we explain the patient care flow -->
+          We start with a digital evaluation where we gather your medical
+          history and habits. With that information, a lead physician defines your ideal
+          care path.
         </p>
         <p>
-          Posteriormente coordinamos interconsultas, exámenes y seguimiento con
-          reportes claros disponibles en el portal del paciente.
+          We then coordinate consultations, exams, and follow-up with
+          clear reports available in the patient portal.
         </p>
         <div class="clear-floats"></div>
       </section>
     </main>
 
     <footer>
-      <p>&copy; 2025 Clínica Vitalis. Todos los derechos reservados.</p>
+      <p>&copy; 2025 Medic Family. All rights reserved.</p>
     </footer>
   </body>
 </html>
