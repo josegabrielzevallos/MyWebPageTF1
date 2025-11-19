@@ -4,9 +4,13 @@ A simple website built exclusively with **HTML5** and **CSS** to showcase a prev
 
 ## Project Structure
 - `index.html`: home page with main hero, featured services, and explanatory sections.
-- `services.html`: medical services catalog with grid/flex demonstrations.
-- `contact.html`: contact page with internal styles, simple form, and controlled overflow example.
+- `pages/`
+    - `services.html`: medical services catalog with grid/flex demonstrations.
+    - `contact.html`: contact page with internal styles, simple form, and controlled overflow example.
 - `style.css`: main stylesheet linked from all pages.
+- `images/`
+    - `img-background.jpg`
+    - `img-home.jpg`
 
 ## How to Navigate
 1. Open `index.html` in your favorite browser.
