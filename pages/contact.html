@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact | Vitalis Clinic</title>
+    <title>Contact | Medic Family</title>
     <link rel="stylesheet" href="../style.css" />
     <style>
-      /* Estilos internos específicos de la página de contacto */
+      /* Specific internal styles for the contact page*/
       form {
         max-width: 640px;
         margin: 0 auto;
@@ -26,24 +26,24 @@
       textarea,
       select {
         width: 100%;
-        padding: 0.75rem;
-        margin-bottom: 1rem;
-        border-radius: 0.5rem;
+        padding: 12px;
+        margin-bottom: 16px;
+        border-radius: 8px;
         border: 1px solid rgba(11, 114, 133, 0.3);
         font-family: inherit;
       }
 
       .contact-details {
         background: rgba(255, 255, 255, 0.85);
-        border-radius: 1rem;
-        padding: 1.5rem;
-        margin: 2rem auto;
+        border-radius: 16px;
+        padding: 24px;
+        margin: 32px auto;
         max-width: 800px;
       }
 
       .map-placeholder {
         height: 240px;
-        border-radius: 1rem;
+        border-radius: 16px;
         background: repeating-linear-gradient(
           45deg,
           rgba(11, 114, 133, 0.15),
@@ -63,7 +63,7 @@
     <header>
       <p id="emergency-banner">2025 - Emergency Line: (01) 555-911</p>
       <nav aria-label="Main Navigation">
-        <h1 class="header-title">Medic Family</h1>
+        <a href="index.html"><h1 class="header-title">Medic Family</h1></a>
 
          <span class="spacer" aria-hidden="true"></span>
         <ul>
@@ -76,19 +76,21 @@
               <li><a href="#">Medicines</a></li>
             </ul>
           </li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html"class="current">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
       <section class="hero">
-        <p class="section-title">Let's Connect</p>
-        <h2>We're ready to help you</h2>
-        <p>
-          Leave us your information and a health advisor will contact you within
-          less than 24 hours.
-        </p>
+        <div class="hero-text">
+          <p class="section-title">Let's Connect</p>
+          <h2>We're ready to help you</h2>
+          <p>
+            Leave us your information and a health advisor will contact you within
+            less than 24 hours.
+          </p>
+        </div>
       </section>
 
       <section>

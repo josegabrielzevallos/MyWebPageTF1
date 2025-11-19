@@ -1,9 +1,5 @@
-/* =========================================================
-   Hoja de estilos principal para Clínica Vitalis
-   Organización por secciones para evitar conflictos específicos
-   ========================================================= */
-
-/* ---------- Configuración global y tipografía ---------- */
+/**************************************************************/
+/* ---------- Global settings and typography---------- */
 :root {
   --primary-color: #0b7285;
   --secondary-color: #37b24d;
@@ -14,11 +10,10 @@
 
 html {
   box-sizing: border-box;
-  font-size: 16px;
-}
+  font-size: 16px;}
 
 *, *::before, *::after {
-  box-sizing: inherit; /* Uso de box-sizing dentro del modelo de caja */
+  box-sizing: inherit; 
 }
 
 body {
@@ -48,7 +43,10 @@ a:active {
   color: #ff922b;
 }
 
-/* ---------- Estructura principal ---------- */
+
+
+/**************************************************/
+/* ---------- header structure ---------- */
 header {
   background: rgba(11, 29, 38, 0.8);
   color: var(--text-light);
@@ -68,11 +66,11 @@ header {
 
 .header-title {
   margin: 0;
-  font-size: 2.5rem;
+  font-size: 40px;
 }
 
 nav {
-  margin-top: 0.5rem;
+  margin-top: 8px;
    margin: 0 auto;
   padding: 1px 32px;
   min-height: 80px;
@@ -81,23 +79,32 @@ nav {
   align-items: flex-end;
   gap: 20px;
 }
+
+p {
+  color: rgb(20, 9, 70);
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+
+
 .spacer{ flex: 1 1 auto; }
 nav ul {
   list-style: none;
-  display: flex; /* Contenedor flex */
-  gap: 1.5rem;
+  display: flex; /* flex Container  */
   align-items: center;
   gap: 20px;
   padding-right: 23px;
 }
 
 nav li {
-  display: inline-block; /* Ejemplo de inline-block */
+  display: inline-block; /* example of inline-block */
 }
 
-nav a {
+nav a.current {
   font-weight: 600;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.8px;
+  color: rgb(61, 223, 238);
 }
 
 /* ===== Submenú Services ===== */
@@ -135,22 +142,24 @@ nav a {
   border-radius: 8px;
 }
 #services-menu a:hover{ background: #405159; }
-/* ---------- Contenido principal ---------- */
+
+
+/**************************************************/
+/* ----------  principal main ---------- */
 
 
 main {
-  padding: 2rem;
-  padding-top: calc(var(--header-height) + 2rem); /* Empuja el contenido debajo del header fijo */
+  padding: 32px;
+  padding-top: calc(var(--header-height) + 32px); 
   background-color: rgba(248, 249, 250, 0.88);
 }
 
 .hero {
-  display: flex; /* Ejemplo explícito de bloque */
-  background: var(--card-bg);
-  padding: 2rem;
-  border-radius: 1rem;
+  display: flex; 
+  padding: 32px;
+  border-radius: 16px;
   border: 1px solid rgba(11, 114, 133, 0.3);
-  margin-bottom: 2rem;
+  margin-bottom: 32px;
   box-shadow: 0 10px 25px rgba(11, 29, 38, 0.15);
   background: linear-gradient(to right, white,#275361)
 }
@@ -160,16 +169,16 @@ main {
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 1.5rem;
+  gap: 16px;
+  margin-top: 24px;
 }
 
 .button-primary,
 .button-secondary {
-  display: inline-flex; /* Elementos flex como botones */
+  display: inline-flex; 
   align-items: center;
   justify-content: center;
-  padding: 0.75rem 1.5rem;
+  padding: 12px 24px;
   border-radius: 999px;
   border: 2px solid transparent;
   font-weight: 700;
@@ -182,9 +191,9 @@ main {
 }
 
 .button-secondary {
-  background-color: transparent;
+  background-color: #727475;
   color: var(--secondary-color);
-  border-color: var(--secondary-color);
+  border-color: #5d5d5d;
 }
 
 .button-primary:hover,
@@ -198,27 +207,27 @@ main {
     border-radius: 12px;
 }
 
-/* ---------- Secciones y tarjetas ---------- */
+/* ---------- Sections and cards ---------- */
 .section-title {
   text-transform: uppercase;
-  letter-spacing: 0.2em;
-  font-size: 0.9rem;
+  letter-spacing: 3.2px;
+  font-size: 14.4px;
   color: var(--primary-color);
 }
 
 .service-grid {
-  display: grid; /* Ejemplo de grid */
+  display: grid; /* example of grid */
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
-  margin-bottom: 2rem;
+  gap: 24px;
+  margin-bottom: 32px;
 }
 
 .card {
   background: var(--card-bg);
-  padding: 1.5rem;
-  border-radius: 1rem;
+  padding: 24px;
+  border-radius: 16px;
   border: 1px solid rgba(11, 29, 38, 0.1);
-  margin: 0; /* Modelo de caja completo */
+  margin: 0; 
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
 }
 
@@ -229,120 +238,101 @@ main {
 .benefits {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
-  margin-bottom: 2rem;
+  gap: 24px;
+  margin-bottom: 32px;
 }
 
 .benefit {
-  flex: 1 1 220px; /* Propiedades de ítems flex */
+  flex: 1 1 220px; /* properties of ítems flex */
   background: var(--card-bg);
-  padding: 1.25rem;
+  padding: 20px;
   border-left: 4px solid var(--primary-color);
-  border-radius: 0.75rem;
+  border-radius: 12px;
 }
 
 .stats {
-  margin: 2rem 0;
+  margin: 32px 0;
   background: rgba(11, 29, 38, 0.8);
   color: var(--text-light);
-  padding: 1.5rem;
-  border-radius: 1rem;
+  padding: 24px;
+  border-radius: 16px;
 }
 
 .stat-item {
-  display: inline-block; /* Ejemplo de inline-block */
-  margin-right: 1.5rem;
-  font-size: 1.1rem;
+  display: inline-block; /* example of inline-block */
+  margin-right: 24px;
+  font-size: 17px;
 }
 
 .inline-text {
-  display: inline; /* Ejemplo de inline */
+  display: inline; /* example of inline */
   background: #e7f5ff;
-  padding: 0 0.25rem;
+  padding: 4px;
 }
 
-/* ---------- Flotantes y limpieza ---------- */
+/* ---------- Float and Clear Example ---------- */
 .float-wrapper {
   background: var(--card-bg);
-  padding: 1rem;
-  border-radius: 1rem;
-  margin-bottom: 2rem;
+  padding: 16px;
+  border-radius: 16px;
+  margin-bottom: 32px;
 }
 
 .float-card {
-  float: right; /* Ejemplo de uso de float */
+  float: right; /* example of float */
   width: 240px;
-  margin: 0 0 1rem 1rem;
-  padding: 1rem;
+  margin: 0 0 16px 16px;
+  padding: 16px;
   background: rgba(11, 114, 133, 0.15);
   border-left: 4px solid var(--secondary-color);
-  border-radius: 0.5rem;
+  border-radius: 8px;
 }
 
 .clear-floats {
-  clear: both; /* Uso de la propiedad clear */
+  clear: both; /* example of clear */
 }
 
-/* ---------- Desbordamiento controlado ---------- */
+/* ---------- Overflow Example ---------- */
+
 .overflow-panel {
   max-height: 120px;
-  overflow-y: auto; /* Ejemplo de overflow */
-  padding: 1rem;
+  overflow-y: auto; /* Example of overflow */
+  padding: 16px;
   border: 1px dashed rgba(11, 114, 133, 0.4);
   background: rgba(255, 255, 255, 0.65);
 }
 
-/* ---------- Pie de página ---------- */
+/**************************************************/
+/* ---------- Footer Section ---------- */
 footer {
   background: rgba(11, 29, 38, 0.85);
   color: var(--text-light);
-  padding: 1rem 2rem;
+  padding: 16px 32px;
   text-align: center;
 }
 
 footer p {
-  margin: 0.25rem 0;
-  font-size: 0.9rem;
+  margin: 4px 0;
+  font-size: 14.4px;
+  color: rgb(255, 255, 255);
 }
-
-/* ---------- Utilidades ---------- */
+/**************************************************/
+/* ---------- Additional Components ---------- */
 #emergency-banner {
   background: #ff6b6b;
   color: var(--text-light);
   padding: 1px;
-  border-radius: 0.5rem;
+  border-radius: 8px;
   display: block;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
   text-align: center;
   font-weight: 600;
 }
 
 .highlighted-note {
   border: 2px dashed var(--secondary-color);
-  padding: 1rem;
-  border-radius: 0.75rem;
+  padding: 16px;
+  border-radius: 12px;
   background: rgba(55, 178, 77, 0.15);
 }
 
-@media (max-width: 600px) {
-  nav ul {
-    flex-direction: column;
-    gap: 0.75rem;
-  }
-
-  /* Header puede necesitar más altura en pantallas pequeñas por el menú apilado */
-  header {
-    --header-height: 10rem;
-    padding: 1rem; /* reducir padding horizontal en móvil */
-  }
-
-  .float-card {
-    float: none;
-    width: 100%;
-  }
-
-  .stat-item {
-    display: block;
-    margin: 0.5rem 0;
-  }
-}
